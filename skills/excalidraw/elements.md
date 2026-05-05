@@ -39,8 +39,8 @@ Text inside a shape requires two linked elements: the shape and a contained text
   "fillStyle": "solid", "strokeWidth": 1, "strokeStyle": "solid",
   "roughness": 1, "opacity": 100, "groupIds": [], "frameId": null,
   "index": "a1", "roundness": null, "seed": 2, "version": 1, "versionNonce": 2,
-  "isDeleted": false, "boundElements": null, "updated": 1, "link": null, "locked": false,
-  "text": "Label text", "fontSize": 16, "fontFamily": 1,
+  "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false,
+  "text": "Label text", "fontSize": 16, "fontFamily": 8,
   "textAlign": "center", "verticalAlign": "middle",
   "containerId": "box-1", "originalText": "Label text",
   "autoResize": true, "lineHeight": 1.25
@@ -73,8 +73,8 @@ Same two-element pattern as rectangle:
   "fillStyle": "solid", "strokeWidth": 1, "strokeStyle": "solid",
   "roughness": 1, "opacity": 100, "groupIds": [], "frameId": null,
   "index": "a3", "roundness": null, "seed": 4, "version": 1, "versionNonce": 4,
-  "isDeleted": false, "boundElements": null, "updated": 1, "link": null, "locked": false,
-  "text": "Decision?", "fontSize": 16, "fontFamily": 1,
+  "isDeleted": false, "boundElements": [], "updated": 1, "link": null, "locked": false,
+  "text": "Decision?", "fontSize": 16, "fontFamily": 8,
   "textAlign": "center", "verticalAlign": "middle",
   "containerId": "decision-1", "originalText": "Decision?",
   "autoResize": true, "lineHeight": 1.25
@@ -120,7 +120,7 @@ Use only for labels that float outside shapes (e.g. diagram title, step annotati
   "roughness": 1, "opacity": 100, "groupIds": [], "frameId": null,
   "index": "a5", "roundness": null, "seed": 6, "version": 1, "versionNonce": 6,
   "isDeleted": false, "boundElements": null, "updated": 1, "link": null, "locked": false,
-  "text": "Diagram Title", "fontSize": 20, "fontFamily": 1,
+  "text": "Diagram Title", "fontSize": 20, "fontFamily": 8,
   "textAlign": "center", "verticalAlign": "middle",
   "containerId": null, "originalText": "Diagram Title",
   "autoResize": true, "lineHeight": 1.25
@@ -135,5 +135,6 @@ Use only for labels that float outside shapes (e.g. diagram title, step annotati
 - Every `id` must be unique — use descriptive strings like `"parse-step"`, `"parse-step-label"`
 - Arrow `points` are relative to the arrow's own `x`/`y` — not absolute coordinates
 - `seed` and `versionNonce` can be any integer — use sequential integers for simplicity
-- Always use `"fontFamily": 1` — this is Excalifont, the default Excalidraw handwritten font
+- Always use `"fontFamily": 8` — this is Excalifont, the default Excalidraw font
 - Font sizes: Small = 16 (labels inside shapes), Medium = 20 (titles, standalone text), Large = 28, Extra Large = 36
+- Label text elements always have `"boundElements": []`, never `null`

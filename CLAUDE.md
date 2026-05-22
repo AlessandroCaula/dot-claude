@@ -120,17 +120,28 @@ Brief description of the problem and what made it non-obvious.
 
 ### NOTES.md Format
 
-A scratchpad for ideas, supervisor feedback, and open questions. Organised by date headers:
+A scratchpad for ideas, supervisor feedback, and open questions. Organised by date headers.
+
+Use `[To Discuss]` to tag entries that need to be raised with a supervisor or colleague — on the date header if the whole entry is a discussion item, or on a `###` sub-header if only part of that date's notes needs discussing:
 
 ```markdown
+## YYYY-MM-DD [To Discuss]
+
+- something to raise with Henrik at the next meeting
+
 ## YYYY-MM-DD
 
+### Regular note title
+
 - concise note, one sentence is enough
-- supervisor feedback: use X approach for the database comparison
-- idea: could MOB-suite replace the manual Inc group annotation step?
+
+### Thing to raise with supervisor [To Discuss]
+
+- description of the open question
 ```
 
 Rules:
+- When the user flags something to raise with a supervisor or colleague, add it under today's date with `[To Discuss]` on the header
 - Before adding any note: run `date +%Y-%m-%d`, check if today's header already exists — if not, prepend a new `## YYYY-MM-DD` header at the top
 - One bullet per note
 - **Keep it short** — one or two sentences per bullet; if it needs more, break it into multiple bullets

@@ -28,9 +28,10 @@ Create a git commit and update project tracking files.
    - If yes, add a concise entry — what the problem was, what the solution was, and where it applies
 
 6. **Write the commit message** — include all staged files (.claude/memory/TODO.md, .claude/memory/JOURNAL.md + code changes):
-   - First line: short imperative summary (max 72 chars)
-   - Body if needed: why the change was made, and which files were affected. Each line starts with a "-"
+   - First line: `{type}: short imperative summary (max 72 chars total including prefix)`
+   - Body only if the summary alone doesn't convey what changed and why — max 3-4 bullets, no file inventories, each line starts with "-"
    - Never add the Co-Authored-By line in the commit message
+   - Types: `feat` · `fix` · `docs` · `style` · `refactor` · `perf` · `test` · `build` · `ci` · `chore` · `revert`
 
 7. **Commit** with `git commit`
 

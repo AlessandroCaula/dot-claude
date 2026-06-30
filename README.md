@@ -32,7 +32,9 @@ git clone https://github.com/your-username/dot-claude.git .claude
 │   ├── new-session.md     # /new-session
 │   ├── wrap.md            # /wrap
 │   ├── commit.md          # /commit
-│   └── recap.md           # /recap
+│   ├── recap.md           # /recap
+│   ├── prep.md            # /prep
+│   └── msg.md             # /msg
 ├── skills/                # Optional skill definitions
 │   ├── search/            # /search
 │   ├── plan/              # /plan
@@ -67,6 +69,8 @@ These are the core of the system. Claude reads them at the start of every sessio
 | `/wrap` | Updates TODO and JOURNAL based on the current conversation — no git commit |
 | `/commit` | Same as `/wrap`, then creates a git commit in the main project |
 | `/recap` | Read-only briefing: current state, what was recently done, open questions, and suggested next steps |
+| `/prep` | Pre-meeting briefing: surfaces `[To Discuss]` items from NOTES, contextualizes them, and flags any that may already be resolved |
+| `/msg` | Suggests a conventional commit message for the current staged changes — does not commit |
 
 ---
 

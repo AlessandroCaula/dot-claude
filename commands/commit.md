@@ -30,7 +30,7 @@ Create a git commit and update project tracking files.
 6. **Write the commit message** — include all staged files (.claude/memory/TODO.md, .claude/memory/JOURNAL.md + code changes):
    - First line: `{type}: short imperative summary (max 72 chars total including prefix)`
    - Body only if the summary alone doesn't convey what changed and why — max 3-4 bullets, no file inventories, each line starts with "-"
-   - Never add the Co-Authored-By line in the commit message
+   - **Never** add the "Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>" line in the commit message!
    - Types: `feat` · `fix` · `docs` · `style` · `refactor` · `perf` · `test` · `build` · `ci` · `chore` · `revert`
 
 7. **Commit** with `git commit`
@@ -39,3 +39,4 @@ Create a git commit and update project tracking files.
 - Never use `--no-verify`
 - Never commit .env, credentials, or large data files
 - Stage .claude/memory/TODO.md, .claude/memory/JOURNAL.md, and .claude/memory/LESSONS.md (if updated) as part of the same commit
+- **Never** add the "Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>" line in the commit message

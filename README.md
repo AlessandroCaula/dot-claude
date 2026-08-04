@@ -17,9 +17,9 @@ Clone this repository as the `.claude/` folder inside any project to get started
 git clone https://github.com/your-username/dot-claude.git .claude
 ```
 
-**2. Fill in `CLAUDE.md`** — update the Project section with your project's description, repo structure, environment, and toolchain. Leave everything else as-is.
+**2. Create a `CLAUDE.md` at your project root** with project-specific instructions: description, repo structure, environment, coding standards. Do not edit `.claude/CLAUDE.md`, that's the memory system's internal instructions.
 
-**3. Open Claude Code.** It will read the session start protocol and memory files automatically.
+**3. Open Claude Code.** It reads both files automatically.
 
 ---
 
